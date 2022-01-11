@@ -1,0 +1,47 @@
+.basicFormWrapper{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+}
+
+.basicForm{
+    width: 90%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.basicForm__title {
+    margin: 20px 0 10px;
+}
+
+.basicForm__input{
+    height: 40px;
+    background: 0;
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    color: white;
+    padding-left: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.basicForm__input:focus{
+    outline: none;
+}
+
+.basicForm__button{
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+}
+
+.blueFont{
+    background-color: lightskyblue;
+}

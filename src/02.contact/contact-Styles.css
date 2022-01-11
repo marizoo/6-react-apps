@@ -1,0 +1,46 @@
+.contact {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card02 {
+    width: 450px;
+    display: flex;
+    border: 1px solid #f8f8f8;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card02__left{
+flex: 35%;
+display: flex;
+flex-direction: column;
+}
+
+.card02__left__img{
+    width: 80%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* CARD RIGHT */
+.card02__right{
+    flex: 65%;
+    display: flex;
+flex-direction: column;
+}
+
+.card02__right__desc{
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.card02__right__button{
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
