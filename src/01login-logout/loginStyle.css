@@ -1,0 +1,63 @@
+/* LOGIN FORM */
+
+.Login01__welcome {
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.Login01__welcomeTitle {
+    margin-bottom: 20px;
+}
+
+.Login01__welcome__button {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+}
+
+
+.Form01 {
+    width: 300px;
+    border: 1px solid #f8f8f8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.Form01__title {
+    margin: 10px 0;
+}
+
+.Form01__error {
+    font-size: 14px;
+    color: hotpink;
+}
+
+.Form01__label {
+    margin: 15px 0 5px 0;
+}
+
+.Form01__input {
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #f8f8f8;
+    color: #f8f8f8;
+    background: 0;
+}
+
+.Form01__input:focus {
+    outline: none;
+}
+
+.Form01__button {
+    padding: 5px;
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    margin: 30px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
