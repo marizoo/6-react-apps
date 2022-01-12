@@ -1,3 +1,3 @@
-a WHAT website created with React + styled component
-+ using WHAT...
-![Screenshot of the site](./screenshots/Agensy-website-800.png)
+Few small Apps created with React
+Practise Local state management.
+![Screenshot of the site](./screenshots/39.all-800.png)

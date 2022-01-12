@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import './shoppingStyle.css'
 import {nanoid} from 'nanoid'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faCheckCircle, faChevronLeft, faChevronRight, faCircle, faTrash, } from '@fortawesome/free-solid-svg-icons'
 
 const DATA = {
     id: 123,
@@ -113,17 +113,18 @@ const ShoppingList = () => {
                                 </>
                             )
                         }   
-                                 
+                                
                                 <div className='shoppingCard__listBox__quantity'>
-                                    <button className='shoppingCard__listBox__quantity__button'
-                                    onClick={()=>handleDecrease(index)}
-                                    >-</button>
+                                    <FontAwesomeIcon icon={faChevronLeft} style={{cursor:'pointer'}}
+                                    onClick={()=>handleDecrease(index)} />
+                                    
                                     <span>{item.quantity}</span>
-                                    <button className='shoppingCard__listBox__quantity__button'
-                                     onClick={()=>handleIncrease(index)}
-                                    >+</button>
+
+                                    <FontAwesomeIcon icon={faChevronRight} onClick={()=>handleIncrease(index)} style={{cursor:'pointer'}}/>
+                                    
                                 </div>
-                                <button className='shoppingCard__listBox__button' onClick={() => handleDelete(item.id)}>x</button>            
+
+                                <button className='shoppingCard__listBox__button' onClick={() => handleDelete(item.id)}><FontAwesomeIcon icon={faTrash} /></button>            
                             </div>             
                         ))}
                     </ul>
@@ -137,3 +138,10 @@ const ShoppingList = () => {
 }
 
 export default ShoppingList
+
+// <button className='shoppingCard__listBox__quantity__button'
+                                    // onClick={()=>handleDecrease(index)}
+                                    // >-</button>
+                                    // <button className='shoppingCard__listBox__quantity__button'
+                                    //  onClick={()=>handleIncrease(index)}
+                                    // >+</button>

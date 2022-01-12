@@ -80,20 +80,6 @@
     font-size: 20px;
 }
 
-.shoppingCard__listBox__quantity__button {
-    width: 25px;
-   height: 25px;
-   font-size: 16px;
-   background: 0;
-   color: white;
-   cursor: pointer;
-   border: 1px solid #f8f8f8;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-right: 5px;
-}
 
 .shoppingCard__listBox__item {
     width: 20%;
@@ -103,7 +89,7 @@
 .shoppingCard__listBox__button {
    width: 25px;
    height: 25px;
-   font-size: 16px;
+   font-size: 12px;
    background: 0;
    color: white;
    cursor: pointer;
