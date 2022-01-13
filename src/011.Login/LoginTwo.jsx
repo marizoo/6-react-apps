@@ -1,60 +1,45 @@
-import React, { useState } from 'react'
-import LoginFormTwo from './LoginFormTwo'
+import React, {useState} from 'react';
+import LoginFormTwo from './LoginFormTwo';
 import './loginStyleTwo.css'
 
 const LoginTwo = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [user, setUser] = useState({name:'', email:''})
-    const [error, setError] = useState('')
+    const [error, setError] = useState(false);
+    const [user, setUser] = useState({name:''})
 
-    const adminUser = {
+    const userAdmin = {
         email: 'admin@admin.com',
         password: 'admin123',
     }
 
-  
-
-    const handleSubmitFormTwo = (values) => {
-       
-        if(values.email === adminUser.email && values.password === adminUser.password) {
-            setUser({
-                name: values.name,
-                email: values.email,
-            })
-
-            const saveValue = {
-                name: values.name,
-                email: values.email, 
-            }
-
+    const handleLogin = (values) => {
+        if(values.email === userAdmin.email && values.password === userAdmin.password) {
             setIsLoggedIn(true);
-            console.log(saveValue);
+
+            const userName = {name: values.name};
+            setUser(userName);
+            
         } else {
-            setError('Sorry dear, details does not match')
-            setIsLoggedIn(false);
+            setError('Sorry darling, details don\'t match');
         }
-        
+
     }
 
     const handleLogout = () => {
-        setUser({name:'', email:''})
         setIsLoggedIn(false);
     }
 
     return (
         <div className='loginTwo'>
-            {isLoggedIn 
-            ? (
-                <>
-                    <h2 className='loginTwo_title'>Welcome, {user.name}</h2>
-                    <button className='loginTwo_buttonLogout' onClick={handleLogout}>Logout</button>
-                </>
-            )
-            : (
-                <LoginFormTwo error={error} onHandleSubmitForm={handleSubmitFormTwo} />   
-            )
-            }
-            
+            {isLoggedIn && (
+                <div className='loginTwo__loggedin'>
+                <h2 className='loginTwo__loggedin__title'>Welcome, {user.name}</h2>
+                <button onClick={handleLogout} className='loginTwo__loggedin__BtnLogin'>Logout</button>
+            </div>
+            )}
+            {!isLoggedIn && (
+                <LoginFormTwo onHandleLogin={handleLogin} error={error}/>
+            )}
         </div>
     )
 }

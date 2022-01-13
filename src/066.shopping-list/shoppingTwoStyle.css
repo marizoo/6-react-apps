@@ -1,0 +1,69 @@
+.shoppingTwo{
+    width: 450px;
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.shoppingTwo__title{
+    margin: 10px 0;
+}
+
+.shoppingTwo__form{
+    width: 90%;
+    
+}
+
+.shoppingTwo__form__box{
+    width: 100%;
+    border: 1px solid #f8f8f8;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.shoppingTwo__form__input{
+    background: 0;
+    border: 0;
+    padding-left: 10px; 
+    height: 100%;
+    color: white;
+}
+
+.shoppingTwo__form__input:focus{
+    outline: none;
+}
+
+.shoppingTwo__form__button{
+    background: 0;
+    color: white;
+    border: 0;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* THE LIST ITEMS */
+.shoppingTwo__list{
+    width: 90%;
+}
+
+.shoppingTwo__list__title{
+    margin: 10px 0;
+}
+
+.shoppingTwo__listBox{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    align-items: center;
+}
+.shoppingTwo__listBox__name{}
+.shoppingTwo__listBox__quantity{}
