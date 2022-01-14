@@ -1,69 +1,97 @@
-.shoppingTwo{
-    width: 450px;
+.shoppingTwo{ 
+    width: 350px;
     border: 1px solid #f8f8f8;
     border-radius: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
 }
-
 .shoppingTwo__title{
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
-
 .shoppingTwo__form{
-    width: 90%;
-    
+    width: 95%;
 }
-
-.shoppingTwo__form__box{
+.shoppingTwo__formBox{
     width: 100%;
-    border: 1px solid #f8f8f8;
-    height: 40px;
-    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 0;
+    height: 40px;
+    border: 1px solid #f8f8f8;
+    padding-right: 10px;
+    border-radius: 10px;
 }
-
-.shoppingTwo__form__input{
-    background: 0;
-    border: 0;
-    padding-left: 10px; 
+.shoppingTwo__formBox__input{
     height: 100%;
     color: white;
+    border:0;
+    background:0;
+    padding: 10px;
 }
 
-.shoppingTwo__form__input:focus{
+.shoppingTwo__formBox__input:focus{
     outline: none;
 }
 
-.shoppingTwo__form__button{
-    background: 0;
-    color: white;
-    border: 0;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-/* THE LIST ITEMS */
+/* DISPLAY */
 .shoppingTwo__list{
-    width: 90%;
+    width: 95%;
 }
-
 .shoppingTwo__list__title{
-    margin: 10px 0;
+    margin: 20px 0 5px;
 }
 
 .shoppingTwo__listBox{
-    width: 100%;
-    height: 40px;
-    display: flex;
     border: 1px solid #f8f8f8;
-    border-radius: 5px;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
-.shoppingTwo__listBox__name{}
-.shoppingTwo__listBox__quantity{}
+
+.shoppingTwo__list__completedBox{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 75%;
+    padding-left: 10px;
+}
+
+.shoppingTwo__list__completed{
+    cursor: pointer;
+}
+
+.completedStrike {
+    text-decoration: line-through;
+}
+
+.shoppingTwo__list__item{
+    margin-left: 10px;
+}
+
+.shoppingTwo__list__quantityBox{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+.shoppingTwo__list__quantityBox__quantity{}
+
+.shoppingTwo__list__trash{
+    display: flex;
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.shoppingTwo__total{
+    width: 100%;
+}
+.shoppingTwo__total__title{
+
+}
