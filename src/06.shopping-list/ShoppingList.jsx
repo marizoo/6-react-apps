@@ -80,60 +80,60 @@ const ShoppingList = () => {
     
 
     return (
-        <div className='shopping'>
-            <div className="shoppingCard">
-                <form className="shoppingCard__inputBox" onSubmit={newInputHandle}>
-                    <input 
-                    type="text" 
-                    className="shoppingCard__inputBox__input" 
-                    placeholder='Add an item...'
-                    value={newInput}
-                    onChange={ev => setNewInput(ev.target.value)}
-                    />
-                    <button type="text" className="shoppingCard__inputBox__button" >+</button>
-                </form>
-                
-                    <ul className="shoppingCard__list">
-                        {items.map((item,index) => (              
-                            <div className="shoppingCard__listBox"
-                            
-                            > 
-                            {item.isSelected 
-                            ? (
-                                <>
-                                <FontAwesomeIcon icon={faCheckCircle} onClick={()=>toggleComplete(index)}/>
-                                <li 
-                                 className='shoppingCard__listBox__item completed' key={index}>{item.text}</li> 
-                                </>
-                            )
-                            : (
-                                <>
-                                <FontAwesomeIcon onClick={()=>toggleComplete(index)} icon={faCircle} />
-                                <li className='shoppingCard__listBox__item' key={index}>{item.text}</li> 
-                                </>
-                            )
-                        }   
-                                
-                                <div className='shoppingCard__listBox__quantity'>
-                                    <FontAwesomeIcon icon={faChevronLeft} style={{cursor:'pointer'}}
-                                    onClick={()=>handleDecrease(index)} />
-                                    
-                                    <span>{item.quantity}</span>
+		<div className='shopping'>
+				<div className="shoppingCard">
+						<form className="shoppingCard__inputBox" onSubmit={newInputHandle}>
+								<input 
+								type="text" 
+								className="shoppingCard__inputBox__input" 
+								placeholder='Add an item...'
+								value={newInput}
+								onChange={ev => setNewInput(ev.target.value)}
+								/>
+								<button type="text" className="shoppingCard__inputBox__button" >+</button>
+						</form>
+						
+						<ul className="shoppingCard__list">
+								{items.map((item,index) => (              
+										<div className="shoppingCard__listBox"
+										
+										> 
+										{item.isSelected 
+										? (
+												<>
+												<FontAwesomeIcon icon={faCheckCircle} onClick={()=>toggleComplete(index)}/>
+												<li 
+													className='shoppingCard__listBox__item completed' key={index}>{item.text}</li> 
+												</>
+										)
+										: (
+												<>
+												<FontAwesomeIcon onClick={()=>toggleComplete(index)} icon={faCircle} />
+												<li className='shoppingCard__listBox__item' key={index}>{item.text}</li> 
+												</>
+										)
+								}   
+												
+												<div className='shoppingCard__listBox__quantity'>
+														<FontAwesomeIcon icon={faChevronLeft} style={{cursor:'pointer'}}
+														onClick={()=>handleDecrease(index)} />
+														
+														<span>{item.quantity}</span>
 
-                                    <FontAwesomeIcon icon={faChevronRight} onClick={()=>handleIncrease(index)} style={{cursor:'pointer'}}/>
-                                    
-                                </div>
+														<FontAwesomeIcon icon={faChevronRight} onClick={()=>handleIncrease(index)} style={{cursor:'pointer'}}/>
+														
+												</div>
 
-                                <button className='shoppingCard__listBox__button' onClick={() => handleDelete(item.id)}><FontAwesomeIcon icon={faTrash} /></button>            
-                            </div>             
-                        ))}
-                    </ul>
-                
-                    <div className="shoppingCard__totalQuantity">
-                        Total Items: {totalQuantity}
-                    </div>
-            </div>
-        </div>
+												<button className='shoppingCard__listBox__button' onClick={() => handleDelete(item.id)}><FontAwesomeIcon icon={faTrash} /></button>            
+										</div>             
+								))}
+						</ul>
+				
+						<div className="shoppingCard__totalQuantity">
+								Total Items: {totalQuantity}
+						</div>
+				</div>
+		</div>
     )
 }
 

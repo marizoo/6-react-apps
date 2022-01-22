@@ -1,0 +1,81 @@
+.aLogin{}
+
+/* WELCOME PAGE */
+.aLogin__loggedIn{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #777;
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.15);
+    margin: 1rem 0;
+
+}
+
+.aLogin__loggedIn__title{
+    color: hotpink;
+}
+
+.aLogin__loggedIn__btnLogout{
+    height: 30px;
+    font-size: 16px;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;    
+}
+
+.aLogin__loggedIn__btnLogout:hover {
+    background: 0;
+    border: 1px solid #777;
+    color: white;
+    font-weight: 700;  
+}
+
+
+/* FORM */
+.aLoginForm{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #777;
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.15);
+    margin: 1rem 0;
+}
+
+.aLoginForm__title{
+    margin-bottom: 1rem;
+}
+
+.aLoginForm__label{
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.aLoginForm__input{
+    font-size: 16px;
+    height: 30px;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+}
+
+.aLoginForm__input:focus{
+    outline: none;
+}
+
+.aLoginForm__button{
+    height: 30px;
+    font-size: 16px;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.aLoginForm__button:hover {
+    background: 0;
+    border: 1px solid #777;
+    color: white;
+    font-weight: 700;
+}
