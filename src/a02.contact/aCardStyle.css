@@ -1,0 +1,53 @@
+/* CONTACT */
+.aContact{
+    display: flex;
+    flex-direction: column;
+}
+
+/* CARD */
+.aCard{
+    width: 400px;
+    border: 1px solid #777;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.aCard__left{
+    flex: 30%;
+}
+
+.aCard__img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.aCard__right{
+    flex: 70%;
+    margin-left: 1rem;
+}
+
+.aCard__desc{
+    margin-bottom: .5rem;
+    font-size: 16px;
+}
+
+.aCard__button{
+    width: 100%;
+    font-size: 16px;
+    margin: 0.5rem 0 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: .5rem 0;
+    border-radius: 5px;
+}
+
+.aCard__button:hover{
+    border: 1px solid #777;
+    color: white;
+    background: 0;
+}

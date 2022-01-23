@@ -1,0 +1,49 @@
+.aBasicForm{
+    width: 300px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.aBasicForm__title{
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.success {
+    color: hotpink;
+}
+
+.aBasicForm__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.aBasicForm__input{
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    height: 30px;
+    background: 0;
+    color: white;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.aBasicForm__input:focus{
+    outline: 0;
+}
+
+.aBasicForm__button{
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.aBasicForm__button:hover{
+    border: 1px solid #777;
+    background: 0;
+    color: white;
+    
+}
